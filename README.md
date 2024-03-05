@@ -17,6 +17,8 @@ $> cat schema/2.x/mappings.spelunker.json | \
 	-X PUT \
 	https://admin:$(OSPSWD)@localhost:9200/spelunker \
 	-d @-
+
+{"acknowledged":true,"shards_acknowledged":true,"index":"spelunker"}
 ```
 
 ## See also
