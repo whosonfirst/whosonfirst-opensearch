@@ -21,6 +21,17 @@ $> cat schema/2.x/mappings.spelunker.json | \
 {"acknowledged":true,"shards_acknowledged":true,"index":"spelunker"}
 ```
 
+It is also necessary to bump the "total_fields" limit on the index since any give Who's On First repository can exceed the default limit of 1000 fields:
+
+```
+$> curl -k \
+	-H 'Content-type:application/json' \
+	-XPUT https://admin:$(OSPSWD)@localhost:9200/spelunker/_settings \
+	-d '{"index.mapping.total_fields.limit": 5000}'
+	
+{"acknowledged":true}
+```
+
 ### Indexing data
 
 Using the `wof-opensearch-index` tool from the [whosonfirst/go-whosonfirst-opensearch](https://github.com/whosonfirst/go-whosonfirst-opensearch) package:
