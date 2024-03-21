@@ -242,7 +242,7 @@
 		    }
 		}
 	    }},
-	    "wof:concordances_sources": {
+	    "wof:concordances_machinetags": {
 		"type": "text",
 		"fielddata": true,
 		"fields": {
@@ -251,6 +251,15 @@
 		    }
 		}
 	    },
+	    "wof:concordances_sources": {
+		"type": "text",
+		"fielddata": true,
+		"fields": {
+		    "keyword": {
+			"type": "keyword"
+		    }
+		}
+	    },	    
 	    "wof:name" : {
 		"type" : "text",
 		"analyzer": "english",
