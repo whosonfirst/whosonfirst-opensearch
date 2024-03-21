@@ -68,6 +68,15 @@
 	}
     },
     "mappings": {
+	"_source": {
+	    "includes": [
+		"*"
+	    ],
+	    "excludes": [
+		"wof:concordances_*",
+		"translations"
+	    ]
+	},
 	"dynamic_templates":[
 	    { "concordances": {
 		"match": "wof:concordances.*",
@@ -244,7 +253,7 @@
 	    }},
 	    "wof:concordances_machinetags": {
 		"type": "text",
-		"fielddata": true,
+		"fielddata": false,
 		"fields": {
 		    "keyword": {
 			"type": "keyword"
@@ -253,7 +262,7 @@
 	    },
 	    "wof:concordances_sources": {
 		"type": "text",
-		"fielddata": true,
+		"fielddata": false,
 		"fields": {
 		    "keyword": {
 			"type": "keyword"
