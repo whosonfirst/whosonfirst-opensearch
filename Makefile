@@ -2,7 +2,7 @@
 # (That means you should change this.)
 OSPSWD=dkjfhsjdkfkjdjhksfhskd98475kjHkzjxckj
 
-FIELD_LIMIT=6000
+FIELD_LIMIT=7000
 
 spelunker-local:
 	@make spelunker-local-index

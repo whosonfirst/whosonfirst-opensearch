@@ -27,12 +27,12 @@ It is also necessary to bump the "total_fields" limit on the index since any giv
 $> curl -k \
 	-H 'Content-type:application/json' \
 	-XPUT https://admin:$(OSPSWD)@localhost:9200/spelunker/_settings \
-	-d '{"index.mapping.total_fields.limit": 6000}'
+	-d '{"index.mapping.total_fields.limit": 7000}'
 	
 {"acknowledged":true}
 ```
 
-_5000, it turns out, is still too small._
+_6000, it turns out, is still too small._
 
 ### Indexing data
 
