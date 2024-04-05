@@ -1,5 +1,7 @@
 # whosonfirst-opensearch
 
+OpenSearch schema files (and friends) for Who's On First projects.
+
 ## Documentation
 
 Documentation is incomplete.
