@@ -8,7 +8,9 @@ Documentation is incomplete.
 
 All of these examples assume you are using a local Docker instance running a [containerized version of OpenSearch](https://opensearch.org/docs/latest/install-and-configure/install-opensearch/docker/).
 
-### Creating an index
+### Who's On First Spelunker
+
+#### Creating an index
 
 ```
 $> cat schema/2.x/mappings.spelunker.json | \
@@ -34,7 +36,7 @@ $> curl -k \
 
 _6000, it turns out, is still too small._
 
-### Indexing data
+#### Indexing data
 
 Using the `wof-opensearch-index` tool from the [whosonfirst/go-whosonfirst-opensearch](https://github.com/whosonfirst/go-whosonfirst-opensearch) package:
 
