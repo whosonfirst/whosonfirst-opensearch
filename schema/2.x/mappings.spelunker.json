@@ -249,6 +249,24 @@
 			    "type": "keyword"
 			}
 		    }
+		},
+		"pg-dgt:id": {
+		    "type": "text",
+		    "fielddata": true,
+		    "fields": {
+			"keyword": {
+			    "type": "keyword"
+			}
+		    }
+		},		
+		"uscensus:geoid": {
+		    "type": "text",
+		    "fielddata": true,
+		    "fields": {
+			"keyword": {
+			    "type": "keyword"
+			}
+		    }
 		}
 	    }},
 	    "wof:concordances_machinetags": {
