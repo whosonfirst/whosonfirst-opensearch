@@ -232,6 +232,15 @@
 		"type": "text"
 	    },
 	    "wof:concordances": { "properties": {
+		"de-bkg:wsk": {
+		    "type": "text",
+		    "fielddata": true,
+		    "fields": {
+			"keyword": {
+			    "type": "keyword"
+			}
+		    }
+		},		
 		"iata:code": {
 		    "type": "text",
 		    "fielddata": true,
