@@ -188,6 +188,15 @@
 	    }}
 	],
         "properties": {
+	    "de-bkg:wsk": {
+		"type": "text",
+		"fielddata": true,
+		"fields": {
+		    "keyword": {
+			"type": "keyword"
+		    }
+		}
+	    },			    
 	    "edtf:date": {
 		"type": "text",
 		"fielddata": true,
@@ -220,6 +229,15 @@
 		    }
 		}
 	    },
+	    "pg-dgt:id": {
+		"type": "text",
+		"fielddata": true,
+		"fields": {
+		    "keyword": {
+			"type": "keyword"
+		    }
+		}
+	    },			    
 	    "search": {
 		"type": "text",
 		"analyzer": "english",
@@ -232,15 +250,6 @@
 		"type": "text"
 	    },
 	    "wof:concordances": { "properties": {
-		"de-bkg:wsk": {
-		    "type": "text",
-		    "fielddata": true,
-		    "fields": {
-			"keyword": {
-			    "type": "keyword"
-			}
-		    }
-		},		
 		"iata:code": {
 		    "type": "text",
 		    "fielddata": true,
