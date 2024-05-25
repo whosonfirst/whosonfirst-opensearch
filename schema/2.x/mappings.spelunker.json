@@ -326,7 +326,17 @@
 			"type": "keyword"
 		    }
 		}
-	    }
+	    },
+	    "wof:placetype_alt" : {
+		"type" : "text",
+		"copy_to" : [ "placetypes_all", "search" ],
+		"fielddata": true,
+		"fields": {
+		    "keyword": {
+			"type": "keyword"
+		    }
+		}
+	    }	    
 	}
     }
 }
