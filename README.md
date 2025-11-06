@@ -2,6 +2,10 @@
 
 OpenSearch schema files (and friends) for Who's On First projects.
 
+## Deprecation notice
+
+This package has been deprecated and will no longer be maintained. All of its functionality has been moved in to the [whosonfirst/go-whosonfirst-database](https://github.com/whosonfirst/go-whosonfirst-database) package.
+
 ## Documentation
 
 Documentation is incomplete.
